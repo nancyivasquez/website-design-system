@@ -1,0 +1,326 @@
+html{
+    margin-right: 0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Quattrocento Sans', sans-serif;
+    max-width: 100%;
+    background-color: #000000;
+    color: #fff;
+}
+header{
+    height: 100vh;
+}
+header h1{
+    font-size: 6em;
+    text-align: center;
+    padding-top: 10vh;
+}
+@media (min-width: 600px){
+    header h1{
+        padding-top: 30vh;
+    }
+}
+header p{
+    font-size: 2em;
+    text-align: center;
+    padding: .5em 1em 0 1em;
+}
+@media (min-width: 600px){
+    header p{
+        max-width: 50%;
+        float: right;
+    }
+}
+nav{
+    width: max-content;
+    padding-left: 20vh;
+    padding-top: 10vh;
+}
+li{
+    list-style: none;
+}
+li a{
+    font-size: larger;
+    display: block;
+    padding-bottom: 2px;
+    text-decoration: none;
+    border-bottom: 2px #fff solid;
+    transition: font 0.3s ease;
+
+}
+li a:hover{
+    color: #999;
+    border: none;
+    font-size: 30px;
+}
+h2{
+    text-align: center;
+}
+/*colors section*/
+#colors{
+    text-align: center;
+    padding: 1em 0;
+}
+#colors h2{
+    padding: 0.5em 0;
+}
+.color-boxes{
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    margin: auto;
+}
+.background{
+    display: inline-block;
+    padding: 1em;
+    margin: 1em;
+    border: 1px #fff solid;
+}
+.primary{
+    background-color: #fff;
+    color: #000000;
+    display: inline-block;
+    padding: 1em;
+    margin: 1em;
+
+}
+.primary p{
+    color: #000000;
+    background-color: #fff;
+}
+/* fonts section */
+#fonts{
+    padding: 1em 0;
+}
+#fonts h2{
+    padding: 0.5em 0;
+}
+#fonts h3{
+    text-align: center;
+    padding: 0.5em;
+}
+#fonts h3.BS-C{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 400;
+    font-size: x-large;
+}
+#fonts h3.BS-C-light{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 300;
+    font-size: x-large;
+}
+#fonts h3.BS-C-bold{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 600;
+    font-size: x-large;
+}
+/* button section */
+#button-styles{
+    padding: 1em 0;
+}
+#buton-styles h2{
+    padding: 0.5em 0;
+}
+.button-container{
+    padding: 2em;
+    display: flex;
+    justify-content: space-evenly;
+}
+.button-container h3 a{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    text-decoration: none;
+}
+.button-container h3 a.nav-button{
+    display: block;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: font 0.3s ease;
+    padding: 0.3em;
+}
+.button-container h3 a.nav-button:hover{
+    font-size: 30px;
+}
+.button-container h3 a.cta-link{
+    display: block;
+    font-weight: 400;
+    border: 2px #fff solid;
+    border-radius: 5px;
+    padding: 0.3em;
+    text-transform: uppercase;
+}
+.button-container h3 a.cta-link:hover{
+   color: #000000;
+    background-color: #fff;
+    border: 2px #000000 solid;
+    border-radius: 5px;
+    padding: 0.3em;
+}
+/*project links section*/
+#project-links{
+    padding: 1em 0;
+}
+#project-links h2{
+    padding: 1em 0;
+}
+/*.project-link-box{
+    padding: 1em 2em;
+    text-align: center;
+    position: relative;
+    width: 50%;
+    margin: auto;
+    height: 100%;
+}
+.project-link-box a{
+    display: block;
+    z-index: 0;
+}
+.project-overlay a:hover{
+    opacity: 0.9;
+}
+.project-link-box a img{
+    display: block;
+    border-radius: 5px;
+    object-fit: cover;
+    opacity: 0.6;
+    height: 100%;
+    width: 100%;
+}
+
+.project-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+
+.overlay-text p{
+    text-align: left;
+}*/
+.alternative-link-box{
+    position: relative;
+    width: 50%;
+    margin: auto;
+    height: 400px;
+   
+}
+.alternative-link-box a{
+    display: block;
+    background-image: url(images/reachingstemgardens.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    border-radius: 10px;
+    z-index: 3;
+}
+.alternative-link-box a:hover{
+    opacity: 0.1;
+}
+.text-box{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    z-index: 1;
+}
+.text-box h3{
+    text-align: center;
+}
+/*card style*/
+#card-style{
+    padding: 1em 0;
+}
+#card-style h2{
+    padding: 1em 0;
+}
+.blog-card{
+    text-align: center;
+    padding: 1.5em 0;
+    max-width: 60%;
+    margin: auto;
+    border: 2px #fff solid;
+    border-radius: 10px;
+}
+@media (min-width: 500px){
+    .blog-card{
+        max-width: 50%;
+        margin: auto;
+    }
+}
+@media (min-width: 650px){
+    .blog-card{
+        max-width: 40%;
+        margin: auto;
+    }
+}
+@media (min-width: 800px){
+    .blog-card{
+        max-width: 30%;
+        margin: auto;
+    }
+}
+@media (min-width: 1000px){
+    .blog-card{
+        max-width: 25%;
+        margin: auto;
+    }
+}
+@media (min-width: 1200px){
+    .blog-card{
+        max-width: 20%;
+        margin: auto;
+    }
+}
+.blog-card a img{
+    height: 200px;
+}
+.blog-card h3{
+    padding: 1em .5em .5em .5em;
+}
+.blog-card p{
+    padding: 0 0 .5em 0;
+}
+.blog-card a{
+    text-decoration: none;
+}
+a.read-here{
+    margin-top: .5em;
+    display: inline-block;
+    border: 1px #fff solid;
+    padding: .5em;
+    border-radius: 5px;
+}
+a.read-here:hover{
+    color: #000000;
+    background-color: #fff;
+}
+/*footer styles*/
+footer{
+    text-align: center;
+}
+footer p{
+    padding: 3em 0 1em 0;
+}
+footer p a:hover{
+    transition: font 0.3s ease;
+}
+footer p a:hover{
+    font-size: 20px;
+    text-decoration: none;
+}
